@@ -36,7 +36,8 @@ function DoctorCard({ imageSrc, doctorName, specialty }) {
         .doctor-card {
           display: flex;
           flex-direction: column;
-          align-items: center;
+          align-items: center; /* Center items vertically */
+          justify-content: center; /* Center items horizontally */
           text-align: center;
           background: var(--white, #fcfefe);
           border-radius: 5px;
@@ -67,6 +68,7 @@ function DoctorCard({ imageSrc, doctorName, specialty }) {
         }
         .social-icons {
           display: flex;
+          justify-content: center; /* Center the social icons */
           gap: 20px;
           margin-top: 16px;
         }

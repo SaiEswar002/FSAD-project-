@@ -6,11 +6,7 @@ import InfoSection from './InfoSection.jsx';
 import AppointmentForm from './AppointmentForm.jsx';
 import AboutSection from './AboutSection.jsx';
 import ServicesSection from './ServicesSection.jsx';
-Continuing from the previous code:
-
-<FILE path="HospitalWebsite/HospitalWebsite.jsx">
 import DoctorsSection from './DoctorsSection.jsx';
-import NewsSection from './NewsSection.jsx';
 import Footer from './Footer.jsx';
 
 function HospitalWebsite() {
@@ -25,7 +21,6 @@ function HospitalWebsite() {
         <ServicesSection />
         <AppointmentForm />
         <DoctorsSection />
-        <NewsSection />
         <Footer />
       </div>
       <style jsx>{`

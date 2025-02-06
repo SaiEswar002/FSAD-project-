@@ -7,7 +7,7 @@ import AboutSection from "./AboutSection";
 import ServicesSection from "./ServicesSection";
 import AppointmentForm from "./AppointmentForm";
 import DoctorsSection from "./DoctorsSection";
-import NewsSection from "./NewsSection";
+/* import NewsSection from "./NewsSection"; */
 import Footer from "./Footer";
 
 function Home() {
@@ -22,7 +22,7 @@ function Home() {
         <ServicesSection />
         <AppointmentForm />
         <DoctorsSection />
-        <NewsSection />
+        {/* <NewsSection /> */}
         <Footer />
       </div>
       <style jsx>{`

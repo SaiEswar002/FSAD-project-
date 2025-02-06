@@ -18,6 +18,8 @@ function ServiceCard({ imageSrc, imageAlt, serviceName }) {
           border-radius: 5px;
           background: var(--white, #fcfefe);
           font: 400 16px Work Sans, sans-serif;
+          color: black;
+          
         }
         .service-icon {
           width: 50px;

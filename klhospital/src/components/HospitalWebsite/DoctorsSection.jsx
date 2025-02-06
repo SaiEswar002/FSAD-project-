@@ -7,19 +7,31 @@ function DoctorsSection() {
       imageSrc:
         "https://cdn.builder.io/api/v1/image/assets/471bd1fc3ea94fc0a67c95e5f4cf0712/04394c99a0d2e91e70a2df69c6d55dec5338591624bb7ed680e3325adea6c026?apiKey=471bd1fc3ea94fc0a67c95e5f4cf0712&",
       doctorName: "Dr. James Smith",
-      specialty: "Neurology",
+      specialty: "Cardiology",
     },
     {
       imageSrc:
         "https://cdn.builder.io/api/v1/image/assets/471bd1fc3ea94fc0a67c95e5f4cf0712/a2babe5b78d3fcc814ecc3ed30c9cac800dfa2e6fd79dd1be8d530d26a4da2cf?apiKey=471bd1fc3ea94fc0a67c95e5f4cf0712&",
+      doctorName: "Dr. Michael Williams",
+      specialty: "Psychology",
+    },
+    {
+      imageSrc:
+        "https://cdn.builder.io/api/v1/image/assets/471bd1fc3ea94fc0a67c95e5f4cf0712/b33f71bdf398572dcf1c09532216e3bec0185ae7b3910aa1832572354bbecb53?apiKey=471bd1fc3ea94fc0a67c95e5f4cf0712&",
       doctorName: "Dr. Emily Johnson",
       specialty: "Neurology",
     },
     {
       imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/471bd1fc3ea94fc0a67c95e5f4cf0712/b33f71bdf398572dcf1c09532216e3bec0185ae7b3910aa1832572354bbecb53?apiKey=471bd1fc3ea94fc0a67c95e5f4cf0712&",
+        "https://cdn.builder.io/api/v1/image/assets/471bd1fc3ea94fc0a67c95e5f4cf0712/04394c99a0d2e91e70a2df69c6d55dec5338591624bb7ed680e3325adea6c026?apiKey=471bd1fc3ea94fc0a67c95e5f4cf0712&",
+      doctorName: "Dr. James Smith",
+      specialty: "Cardiology",
+    },
+    {
+      imageSrc:
+        "https://cdn.builder.io/api/v1/image/assets/471bd1fc3ea94fc0a67c95e5f4cf0712/a2babe5b78d3fcc814ecc3ed30c9cac800dfa2e6fd79dd1be8d530d26a4da2cf?apiKey=471bd1fc3ea94fc0a67c95e5f4cf0712&",
       doctorName: "Dr. Michael Williams",
-      specialty: "Neurology",
+      specialty: "Psychology",
     },
   ];
 
@@ -55,6 +67,7 @@ function DoctorsSection() {
         }
         .doctors-grid {
           display: grid;
+          justify-content: center; /* Center the grid items */
           grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
           gap: 20px;
           margin-top: 64px;
