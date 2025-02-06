@@ -32,7 +32,7 @@ function Navbar() {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 17px 186px 18px;
+          padding: 10px 20px; /* Adjusted padding for better fit */
           color: var(--white, #fcfefe);
           font-family: Work Sans, sans-serif;
         }

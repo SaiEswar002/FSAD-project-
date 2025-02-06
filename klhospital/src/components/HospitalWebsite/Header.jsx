@@ -29,7 +29,7 @@ function Header() {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          padding: 19px 70px;
+          padding: 10px 20px; /* Adjusted padding for better fit */
           width: 100%;
         }
         @media (max-width: 991px) {

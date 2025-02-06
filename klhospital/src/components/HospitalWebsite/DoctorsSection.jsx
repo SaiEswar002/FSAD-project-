@@ -49,7 +49,7 @@ function DoctorsSection() {
         .doctors-section {
           margin-top: 64px;
           text-align: center;
-          padding: 64px 70px;
+          padding: 40px 20px; /* Adjusted padding for better fit */
           background: var(--Primary, #1f2b6c);
           color: var(--white, #fcfefe);
         }

@@ -22,9 +22,9 @@ function MainVisual() {
           display: flex;
           flex-direction: column;
           position: relative;
-          min-height: 550px;
+          min-height: 250px;
           width: 100%;
-          padding: 167px 80px;
+          padding: 100px 20px; /* Adjusted padding for better fit */
           font-family: Work Sans, sans-serif;
           color: var(--Primary, #1f2b6c);
         }
@@ -36,8 +36,8 @@ function MainVisual() {
         .main-image {
           position: absolute;
           inset: 0;
-          height: 100%;
-          width: 100%;
+          max-height: 100%; /* Ensure the image does not exceed the container */
+          max-width: 100%; /* Ensure the image does not exceed the container */
           object-fit: cover;
           object-position: center;
         }

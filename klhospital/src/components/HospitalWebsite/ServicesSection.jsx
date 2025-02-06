@@ -89,7 +89,7 @@ function ServicesSection() {
       </section>
       <style jsx>{`
         .services-section {
-          padding: 64px 70px;
+          padding: 40px 20px; /* Adjusted padding for better fit */
           text-align: center;
           background-color: rgba(252, 254, 254, 0.8);
         }
