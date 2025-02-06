@@ -35,7 +35,7 @@ function MainVisual() {
         }
         .main-image {
           position: absolute;
-          inset: 0;
+          inset: 10;
           max-height: 100%; /* Ensure the image does not exceed the container */
           max-width: 100%; /* Ensure the image does not exceed the container */
           object-fit: cover;
