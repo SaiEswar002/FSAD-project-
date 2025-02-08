@@ -5,12 +5,12 @@ function Header() {
     <>
       <header className="header">
         <div className="logo">
-          KL-<span className="highlight">hOSPITALS</span>
+          KL-<span className="highlight">HOSPITALS</span>
         </div>
         <div className="contact-info">
           <div className="contact-block">
             <h2 className="contact-title">Emergency</h2>
-            <p className="contact-detail">(237) 681-812-255</p>
+            <p className="contact-detail">(+91) 92378-21832</p>
           </div>
           <div className="contact-block">
             <h2 className="contact-title">Work Hour</h2>
@@ -18,7 +18,7 @@ function Header() {
           </div>
           <div className="contact-block">
             <h2 className="contact-title">Location</h2>
-            <p className="contact-detail">0123 Some Place</p>
+            <p className="contact-detail">Vaddeswaram</p>
           </div>
         </div>
       </header>
@@ -27,7 +27,7 @@ function Header() {
           background: var(--white, #fcfefe);
           display: flex;
           flex-direction: column;
-          align-items: center;
+          align-items: flex-start;
           justify-content: center;
           padding: 10px 20px; /* Adjusted padding for better fit */
           width: 100%;

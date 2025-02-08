@@ -5,10 +5,12 @@ function MainVisual() {
     <>
       <div className="main-visual">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets/471bd1fc3ea94fc0a67c95e5f4cf0712/26605c234810518056a0ba344fbfc8cd58e57a6a36b94b219747c8ac54db69c4?apiKey=471bd1fc3ea94fc0a67c95e5f4cf0712&"
+          //https://cdn.builder.io/api/v1/image/assets/471bd1fc3ea94fc0a67c95e5f4cf0712/26605c234810518056a0ba344fbfc8cd58e57a6a36b94b219747c8ac54db69c4?apiKey=471bd1fc3ea94fc0a67c95e5f4cf0712&
+          src="src\assets\p1.jpg"
           alt="Hospital Exterior"
           className="main-image"
         />
+        <br/>
         <div className="visual-content">
           <h1 className="visual-title">Caring for Life</h1>
           <h2 className="visual-subtitle">
@@ -19,12 +21,13 @@ function MainVisual() {
       </div>
       <style jsx>{`
         .main-visual {
+          background-color:
           display: flex;
           flex-direction: column;
           position: relative;
           min-height: 250px;
           width: 100%;
-          padding: 100px 20px; /* Adjusted padding for better fit */
+          padding: 100px 120px; /* Adjusted padding for better fit */
           font-family: Work Sans, sans-serif;
           color: var(--Primary, #1f2b6c);
         }
@@ -35,11 +38,13 @@ function MainVisual() {
         }
         .main-image {
           position: absolute;
-          inset: 10;
+          right: 111px; /* Position the image to the right */
+          top: 0; /* Ensure the image starts from the top */
+          bottom: 0; /* Ensure the image stretches to the bottom */
           max-height: 100%; /* Ensure the image does not exceed the container */
           max-width: 100%; /* Ensure the image does not exceed the container */
           object-fit: cover;
-          object-position: center;
+          object-position: right; /* Ensure the main image is aligned to the right */
         }
         .visual-content {
           position: relative;
