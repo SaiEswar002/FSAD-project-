@@ -1,14 +1,14 @@
 import * as React from "react";
-import Header from "./Header";
-import Navbar from "./Navbar";
-import MainVisual from "./MainVisual";
-import InfoSection from "./InfoSection";
-import AboutSection from "./AboutSection";
-import ServicesSection from "./ServicesSection";
-import AppointmentForm from "./AppointmentForm";
-import DoctorsSection from "./DoctorsSection";
+import Header from "./home/Header";
+import Navbar from "./home/Navbar";
+import MainVisual from "./home/MainVisual";
+import InfoSection from "./home/InfoSection";
+import AboutSection from "./home/AboutSection";
+import ServicesSection from "./home/ServicesSection";
+import AppointmentForm from "./home/AppointmentForm";
+import DoctorsSection from "./home/DoctorsSection";
 /* import NewsSection from "./NewsSection"; */
-import Footer from "./Footer";
+import Footer from "./home/Footer";
 
 function Home() {
   return (
