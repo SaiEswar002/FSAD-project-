@@ -4,9 +4,8 @@ import DoctorCard from "./DoctorCard.jsx";
 function DoctorsSection() {
   const doctors = [
     {
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/471bd1fc3ea94fc0a67c95e5f4cf0712/04394c99a0d2e91e70a2df69c6d55dec5338591624bb7ed680e3325adea6c026?apiKey=471bd1fc3ea94fc0a67c95e5f4cf0712&",
-      doctorName: "Dr. James Smith",
+      imageSrc: "src/assets/DoctorJohny.png", // Added Doctor Johny's image
+      doctorName: "Dr. Johnny",
       specialty: "Cardiology",
     },
     {
@@ -47,7 +46,7 @@ function DoctorsSection() {
       </section>
       <style jsx>{`
         .doctors-section {
-          margin-top: 64px;
+          margin-top: 60px;
           text-align: center;
           padding: 40px 20px; /* Adjusted padding for better fit */
           background: var(--Primary, #1f2b6c);
