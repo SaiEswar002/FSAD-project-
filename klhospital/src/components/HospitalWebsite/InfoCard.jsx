@@ -3,11 +3,11 @@ import * as React from "react";
 function InfoCard({ title, line1, line2 }) {
   return (
     <>
-      <div className="info-card">
+      <button className="info-card">
         <h2 className="info-title">{title}</h2>
         <p className="info-line">{line1}</p>
         <p className="info-line">{line2}</p>
-      </div>
+       </button>
       <style jsx>{`
         .info-card {
           background: var(--Primary, #1f2b6c);
