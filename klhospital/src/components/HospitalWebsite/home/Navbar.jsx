@@ -1,28 +1,51 @@
 import * as React from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <>
       <nav className="navbar">
         <div className="nav-links">
-          <a href="#" className="nav-link highlight">
+          <NavLink 
+            to="/" 
+            className={({ isActive }) => `nav-link ${isActive ? 'highlight' : ''}`}
+          >
             Home
-          </a>
-          <a href="#" className="nav-link">
+          </NavLink>
+          <NavLink 
+            to="#" 
+            className="nav-link"
+            onClick={(e) => e.preventDefault()}
+          >
             About us
-          </a>
-          <a href="#" className="nav-link">
+          </NavLink>
+          <NavLink 
+            to="/services" 
+            className={({ isActive }) => `nav-link ${isActive ? 'highlight' : ''}`}
+          >
             Services
-          </a>
-          <a href="#" className="nav-link">
+          </NavLink>
+          <NavLink 
+            to="#" 
+            className="nav-link"
+            onClick={(e) => e.preventDefault()}
+          >
             Doctors
-          </a>
-          <a href="#" className="nav-link">
+          </NavLink>
+          <NavLink 
+            to="#" 
+            className="nav-link"
+            onClick={(e) => e.preventDefault()}
+          >
             News
-          </a>
-          <a href="#" className="nav-link">
+          </NavLink>
+          <NavLink 
+            to="#" 
+            className="nav-link"
+            onClick={(e) => e.preventDefault()}
+          >
             Contact
-          </a>
+          </NavLink>
         </div>
         <button className="appointment-btn">Appointment</button>
       </nav>
@@ -32,7 +55,7 @@ function Navbar() {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 10px 20px; /* Adjusted padding for better fit */
+          padding: 10px 20px;
           color: var(--white, #fcfefe);
           font-family: Work Sans, sans-serif;
         }
@@ -57,6 +80,11 @@ function Navbar() {
           color: var(--white, #fcfefe);
           font-size: 18px;
           font-weight: 400;
+          text-decoration: none;
+          transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+          color: var(--Accent, #bfd2f8);
         }
         .highlight {
           color: var(--Accent, #bfd2f8);
@@ -69,6 +97,13 @@ function Navbar() {
           font-weight: 500;
           padding: 13px 35px;
           white-space: nowrap;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+        .appointment-btn:hover {
+          background: var(--Secondary, #159eec);
+          color: var(--white, #fcfefe);
         }
         @media (max-width: 991px) {
           .appointment-btn {
