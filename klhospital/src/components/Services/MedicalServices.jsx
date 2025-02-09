@@ -1,22 +1,22 @@
 "use client";
 
 import React from "react";
-import { Logo } from "./Logo";
-import { ContactInfo } from "./ContactInfo";
-import { Navigation } from "./Navigation";
+// import { Logo } from "./Logo";
+// import { ContactInfo } from "./ContactInfo";
+// import { Navigation } from "./Navigation";
 import { ServiceCard } from "./ServiceCard";
-import { ContactSection } from "./ContactSection";
-import { Footer } from "./Footer";
+// import { ContactSection } from "./ContactSection";
+// import { Footer } from "./Footer";
 
 export default function MedicalServices() {
   return (
     <main className="services">
       <header className="header">
         <div className="header-content">
-          <Logo />
-          <ContactInfo />
+          {/* <Logo /> */}
+          {/* <ContactInfo /> */}
         </div>
-        <Navigation />
+        {/* <Navigation /> */}
       </header>
 
       <img
@@ -140,8 +140,8 @@ export default function MedicalServices() {
         </div>
       </section>
 
-      <ContactSection />
-      <Footer />
+      {/* <ContactSection /> */}
+      {/* <Footer /> */}
 
       <style jsx>{`
         .services {

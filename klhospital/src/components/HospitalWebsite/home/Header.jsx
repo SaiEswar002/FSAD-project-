@@ -4,9 +4,12 @@ function Header() {
   return (
     <>
       <header className="header">
+        {/* Logo on the left */}
         <div className="logo">
           KL-<span className="highlight">HOSPITALS</span>
         </div>
+
+        {/* Contact info on the right */}
         <div className="contact-info">
           <div className="contact-block">
             <h2 className="contact-title">Emergency</h2>
@@ -22,51 +25,63 @@ function Header() {
           </div>
         </div>
       </header>
+
+      {/* Updated CSS */}
       <style jsx>{`
         .header {
-          background: var(--white, #fcfefe);
+          background: #fcfefe;
           display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: center;
-          padding: 10px 20px; /* Adjusted padding for better fit */
-          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+          width: 99%;
         }
+
         @media (max-width: 991px) {
           .header {
-            padding: 0 20px;
+            flex-direction: column;
+            padding: 10px 20px;
           }
         }
+
         .logo {
           color: var(--Secondary, #159eec);
           text-transform: uppercase;
-          font: 400 36px Yeseva One, -apple-system, Roboto, Helvetica,
-            sans-serif;
+          font: 400 36px Yeseva One, -apple-system, Roboto, Helvetica, sans-serif;
+          flex: 0 1 auto; /* Ensure the logo stays on the left */
         }
+
         .highlight {
           color: rgba(21, 158, 236, 1);
         }
+
         .contact-info {
           display: flex;
           flex-wrap: wrap;
-          gap: 40px 58px;
+          gap: 30px 48px;
           font: 500 16px Work Sans, sans-serif;
-          justify-content: center;
-          align-items: start;
+          justify-content: flex-end; /* Align contact info to the right */
+          align-items: flex-start;
+          flex: 1 1 auto; /* Allow the contact-info section to grow and push to the right */
         }
+
         @media (max-width: 991px) {
           .contact-info {
             width: 100%;
+            justify-content: center; /* Center-align for smaller screens */
           }
         }
+
         .contact-block {
           display: flex;
           flex-direction: column;
         }
+
         .contact-title {
           color: var(--Primary, #1f2b6c);
           text-transform: uppercase;
         }
+
         .contact-detail {
           color: var(--Secondary, #159eec);
         }

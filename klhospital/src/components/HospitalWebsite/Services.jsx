@@ -1,37 +1,35 @@
 import * as React from "react";
-import Header from "./home/Header";
-import Navbar from "./home/Navbar";
-import ServiceCard from "./home/ServiceCard";
-import ServicesSection from "./home/ServicesSection";
-import AppointmentForm from "./home/AppointmentForm";
+// import Header from "./home/Header";
+// import Navbar from "./home/Navbar";
 import Footer from "./home/Footer";
-import MedicalServices from "./services/MedicalServices";
+import MedicalServices from "../services/MedicalServices";
+// import ServicesSection from "./home/ServicesSection"; // Added for consistency
+// import AppointmentForm from "./home/AppointmentForm"; // Added for consistency
 
 function Services() {
   return (
     <>
       <div className="services-page">
-        <Header />
-        <Navbar />
-        <div className="services-hero">
-          <h1 className="hero-title">Our Services</h1>
-          <p className="hero-subtitle">Comprehensive Healthcare Solutions</p>
-        </div>
+        {/* <Header /> */}
+        {/* <Navbar /> */}
         <MedicalServices />
-        <ServicesSection />
-        <section className="appointment-section">
-          <h2 className="section-title">Book an Appointment</h2>
-          <AppointmentForm />
-        </section>
+        {/* <ServicesSection /> Added for consistency */}
+        {/* <section className="appointment-section"> */}
+          {/* <h2 className="section-title">Book an Appointment</h2> */}
+          {/* <AppointmentForm /> Added for consistency */}
+        {/* </section> */}
         <Footer />
       </div>
       <style jsx>{`
+      .header {
+      width: 99%;
+      }
         .services-page {
           display: flex;
           flex-direction: column;
           min-height: 100vh;
           background: var(--white, rgb(255, 250, 250));
-          width: 100%;
+          // width: 100%;
           overflow-x: hidden;
         }
         .services-hero {
