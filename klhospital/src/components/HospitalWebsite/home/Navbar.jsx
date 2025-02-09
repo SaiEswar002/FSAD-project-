@@ -13,9 +13,8 @@ function Navbar() {
             Home
           </NavLink>
           <NavLink 
-            to="#" 
-            className="nav-link"
-            onClick={(e) => e.preventDefault()}
+            to="/about" 
+            className={({ isActive }) => `nav-link ${isActive ? 'highlight' : ''}`}
           >
             About us
           </NavLink>
