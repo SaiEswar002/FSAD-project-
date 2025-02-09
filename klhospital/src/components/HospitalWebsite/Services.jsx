@@ -5,7 +5,7 @@ import ServiceCard from "./home/ServiceCard";
 import ServicesSection from "./home/ServicesSection";
 import AppointmentForm from "./home/AppointmentForm";
 import Footer from "./home/Footer";
-import MedicalServices from "../services/MedicalServices";
+import MedicalServices from "./services/MedicalServices";
 
 function Services() {
   return (
