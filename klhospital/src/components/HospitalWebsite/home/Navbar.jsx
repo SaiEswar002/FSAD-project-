@@ -15,9 +15,10 @@ function Navbar() {
           <NavLink 
             to="/about" 
             className={({ isActive }) => `nav-link ${isActive ? 'highlight' : ''}`}
-          >
+            >
             About us
           </NavLink>
+
           <NavLink 
             to="/services" 
             className={({ isActive }) => `nav-link ${isActive ? 'highlight' : ''}`}

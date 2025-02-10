@@ -161,7 +161,7 @@ export default function MedicalServices() {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 19px 70px;
+          padding: 0px 70px;
           max-width: 992px;
           margin: 0 auto;
           width: 100%;

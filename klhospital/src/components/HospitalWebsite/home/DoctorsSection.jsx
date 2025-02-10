@@ -4,10 +4,10 @@ import DoctorCard from "./DoctorCard.jsx";
 function DoctorsSection() {
   const doctors = [
     {
-      imageSrc: "src/assets/DoctorJohny.png", // Added Doctor Johny's image
-      doctorName: "Dr. Johnny",
-      specialty: "Cardiology",
-    },
+      imageSrc:
+      "https://cdn.builder.io/api/v1/image/assets/471bd1fc3ea94fc0a67c95e5f4cf0712/a2babe5b78d3fcc814ecc3ed30c9cac800dfa2e6fd79dd1be8d530d26a4da2cf?apiKey=471bd1fc3ea94fc0a67c95e5f4cf0712&",
+    doctorName: "Dr. Michael Williams",
+    specialty: "Psychology",},
     {
       imageSrc:
         "https://cdn.builder.io/api/v1/image/assets/471bd1fc3ea94fc0a67c95e5f4cf0712/a2babe5b78d3fcc814ecc3ed30c9cac800dfa2e6fd79dd1be8d530d26a4da2cf?apiKey=471bd1fc3ea94fc0a67c95e5f4cf0712&",
