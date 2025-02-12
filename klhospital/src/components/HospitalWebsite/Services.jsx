@@ -28,6 +28,8 @@ function Services() {
           display: flex;
           flex-direction: column;
           min-height: 100vh;
+          padding-top:0px;
+          margin-top:0px;
           background: var(--white, rgb(255, 250, 250));
           // width: 100%;
           overflow-x: hidden;

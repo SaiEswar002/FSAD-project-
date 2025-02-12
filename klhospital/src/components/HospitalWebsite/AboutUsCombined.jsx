@@ -52,7 +52,7 @@ export default function AboutUsCombined() {
         .about-us {
           background: #fcfefe;
           display: flex;
-          padding-top: 20px;
+          padding-top: 0px;
           flex-direction: column;
           overflow: hidden;
           align-items: center;

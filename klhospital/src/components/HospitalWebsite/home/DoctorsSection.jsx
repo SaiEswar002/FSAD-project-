@@ -3,17 +3,17 @@ import DoctorCard from "./DoctorCard.jsx";
 
 function DoctorsSection() {
   const doctors = [
-    {
-      imageSrc:
-      "https://cdn.builder.io/api/v1/image/assets/471bd1fc3ea94fc0a67c95e5f4cf0712/a2babe5b78d3fcc814ecc3ed30c9cac800dfa2e6fd79dd1be8d530d26a4da2cf?apiKey=471bd1fc3ea94fc0a67c95e5f4cf0712&",
-    doctorName: "Dr. Michael Williams",
-    specialty: "Psychology",},
-    {
-      imageSrc:
-        "https://cdn.builder.io/api/v1/image/assets/471bd1fc3ea94fc0a67c95e5f4cf0712/a2babe5b78d3fcc814ecc3ed30c9cac800dfa2e6fd79dd1be8d530d26a4da2cf?apiKey=471bd1fc3ea94fc0a67c95e5f4cf0712&",
-      doctorName: "Dr. Michael Williams",
-      specialty: "Psychology",
-    },
+    // {
+    //   imageSrc: "src/assets/DoctorJohny.png", // Added Doctor Johny's image
+    //   doctorName: "Dr. Johnny",
+    //   specialty: "Cardiology",
+    // },
+    // {
+    //   imageSrc:
+    //     "https://cdn.builder.io/api/v1/image/assets/471bd1fc3ea94fc0a67c95e5f4cf0712/a2babe5b78d3fcc814ecc3ed30c9cac800dfa2e6fd79dd1be8d530d26a4da2cf?apiKey=471bd1fc3ea94fc0a67c95e5f4cf0712&",
+    //   doctorName: "Dr. Michael Williams",
+    //   specialty: "Psychology",
+    // },
     {
       imageSrc:
         "https://cdn.builder.io/api/v1/image/assets/471bd1fc3ea94fc0a67c95e5f4cf0712/b33f71bdf398572dcf1c09532216e3bec0185ae7b3910aa1832572354bbecb53?apiKey=471bd1fc3ea94fc0a67c95e5f4cf0712&",
@@ -45,39 +45,51 @@ function DoctorsSection() {
         </div>
       </section>
       <style jsx>{`
-        .doctors-section {
-          margin-top: 60px;
-          text-align: center;
-          padding: 40px 20px; /* Adjusted padding for better fit */
-          background: var(--Primary, #1f2b6c);
-          color: var(--white, #fcfefe);
-        }
-        @media (max-width: 991px) {
-          .doctors-section {
-            padding: 0 20px;
-            margin-top: 40px;
-          }
-        }
-        .section-title {
-          color: var(--Secondary, #159eec);
-          letter-spacing: 2.88px;
-          text-transform: uppercase;
-          font: 700 18px Work Sans, sans-serif;
-        }
-        .doctors-grid {
-          display: grid;
-          justify-content: center; /* Center the grid items */
-          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-          gap: 20px;
-          margin-top: 64px;
-        }
-        @media (max-width: 991px) {
-          .doctors-grid {
-            grid-template-columns: 1fr;
-            margin-top: 40px;
-          }
-        }
-      `}</style>
+  .doctors-section {
+    margin-top: 60px;
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--Primary, #1f2b6c);
+    color: var(--white, #fcfefe);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+    padding-top: 20px;
+  }
+
+  @media (max-width: 991px) {
+    .doctors-section {
+      padding: 0 20px;
+      margin-top: 40px;
+    }
+  }
+
+  .section-title {
+    color: var(--Secondary, #159eec);
+    letter-spacing: 2.88px;
+    text-transform: uppercase;
+    font: 700 18px Work Sans, sans-serif;
+  }
+
+  .doctors-grid {
+    display: grid;
+    justify-content: center; /* Center the grid items */
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 64px;
+    width: 100%; /* Ensures it takes up available space */
+    max-width: 900px; /* Adjust as needed */
+  }
+
+  @media (max-width: 991px) {
+    .doctors-grid {
+      grid-template-columns: 1fr;
+      margin-top: 40px;
+    }
+  }
+`}</style>
+
     </>
   );
 }

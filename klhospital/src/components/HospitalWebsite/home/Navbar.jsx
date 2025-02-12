@@ -1,7 +1,9 @@
 import * as React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate(); // Hook to navigate
+
   return (
     <>
       <nav className="navbar">
@@ -15,10 +17,9 @@ function Navbar() {
           <NavLink 
             to="/about" 
             className={({ isActive }) => `nav-link ${isActive ? 'highlight' : ''}`}
-            >
+          >
             About us
           </NavLink>
-
           <NavLink 
             to="/services" 
             className={({ isActive }) => `nav-link ${isActive ? 'highlight' : ''}`}
@@ -26,28 +27,26 @@ function Navbar() {
             Services
           </NavLink>
           <NavLink 
-            to="#" 
-            className="nav-link"
-            onClick={(e) => e.preventDefault()}
+            to="/doctors" 
+            className={({ isActive }) => `nav-link ${isActive ? 'highlight' : ''}`}
           >
             Doctors
           </NavLink>
           <NavLink 
-            to="#" 
-            className="nav-link"
-            onClick={(e) => e.preventDefault()}
-          >
-            News
-          </NavLink>
-          <NavLink 
-            to="#" 
-            className="nav-link"
-            onClick={(e) => e.preventDefault()}
+            to="/contacts" 
+            className={({ isActive }) => `nav-link ${isActive ? 'highlight' : ''}`}
           >
             Contact
           </NavLink>
         </div>
-        <button className="appointment-btn">Appointment</button>
+        <div className="auth-buttons">
+          <button className="login-btn" onClick={() => navigate("/Login" , "_blank")}>
+            Login
+          </button>
+          <button className="signup-btn" onClick={() => navigate("/Register")}>
+            Register
+          </button>
+        </div>
       </nav>
       <style jsx>{`
         .navbar {
@@ -55,7 +54,7 @@ function Navbar() {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 10px 20px;
+          padding: 5px 20px;
           color: var(--white, #fcfefe);
           font-family: Work Sans, sans-serif;
         }
@@ -71,11 +70,6 @@ function Navbar() {
           align-items: start;
           margin: auto 0;
         }
-        @media (max-width: 991px) {
-          .nav-links {
-            width: 100%;
-          }
-        }
         .nav-link {
           color: var(--white, #fcfefe);
           font-size: 18px;
@@ -90,25 +84,39 @@ function Navbar() {
           color: var(--Accent, #bfd2f8);
           font-weight: 600;
         }
-        .appointment-btn {
+        .auth-buttons {
+          display: flex;
+          gap: 15px;
+        }
+        .login-btn {
           border-radius: 50px;
           background: var(--Accent, #bfd2f8);
           color: var(--Primary, #1f2b6c);
           font-weight: 500;
-          padding: 13px 35px;
-          white-space: nowrap;
+          padding: 14px 36px;
           border: none;
           cursor: pointer;
+          margin-top:15px;
           transition: background-color 0.3s ease;
         }
-        .appointment-btn:hover {
+        .login-btn:hover{
           background: var(--Secondary, #159eec);
           color: var(--white, #fcfefe);
         }
-        @media (max-width: 991px) {
-          .appointment-btn {
-            padding: 0 20px;
-          }
+        .signup-btn {
+          border-radius: 50px;
+          background: #42b72a;
+          color: var(--Primary, rgb(244, 245, 255));
+          font-weight: 500;
+          padding: 14px 36px;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          margin-top:10px;
+        }
+        .signup-btn:hover {
+          background: var(--Secondary, rgb(7, 96, 148));
+          color: var(--white, #fcfefe);
         }
       `}</style>
     </>

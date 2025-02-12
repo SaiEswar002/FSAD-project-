@@ -104,6 +104,7 @@ function Footer() {
           display: flex;
           flex-direction: column;
           align-items: center;
+          margin-top: 70px;
         }
         @media (max-width: 991px) {
           .footer {

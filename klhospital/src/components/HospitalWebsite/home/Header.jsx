@@ -6,7 +6,7 @@ function Header() {
       <header className="header">
         {/* Logo on the left */}
         <div className="logo">
-          KL-<span className="highlight">HOSPITALS</span>
+         <b> KL-</b><span className="highlight">HOSPITALS</span>
         </div>
 
         {/* Contact info on the right */}
@@ -45,14 +45,14 @@ function Header() {
         }
 
         .logo {
-          color: var(--Secondary, #159eec);
+          color: var(--Secondary,rgb(0, 7, 106));
           text-transform: uppercase;
           font: 400 36px Yeseva One, -apple-system, Roboto, Helvetica, sans-serif;
           flex: 0 1 auto; /* Ensure the logo stays on the left */
         }
 
         .highlight {
-          color: rgba(21, 158, 236, 1);
+          color: rgb(2, 67, 104);
         }
 
         .contact-info {
