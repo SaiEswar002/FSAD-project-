@@ -1,71 +1,91 @@
+/* Login.css */
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1f2b6c; /* Primary Dark Blue */
+    background-color: #f0f2f5;
+  }
+  
+  .login-box {
+    background: #ffffff;
     padding: 20px;
-}
-
-.login-box {
-    background: #fcfefe;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
     text-align: center;
-    border: 3px solid #159eec;
-}
-
-.login-box h2 {
-    background-color: #1f2b6c;
-    color: #fcfefe;
-    padding: 12px;
-    border-radius: 5px;
+  }
+  
+.login-container  h2 {
     margin-bottom: 20px;
-}
-
-.login-box .form-group {
+    color: white;
+    background-color: #1f2b6c;
+    padding: 5px;
+  }
+  
+  .form-group {
     margin-bottom: 15px;
     text-align: left;
-}
-
-.login-box label {
+  }
+  
+  label {
     display: block;
-    font-size: 16px;
-    font-weight: 500;
-    color: #1f2b6c;
+    font-size: 14px;
+    font-weight: bold;
     margin-bottom: 5px;
-}
-
-.login-box input,
-.login-box select {
+    color: #333;
+  }
+  
+  input, select {
     width: 100%;
+    font-weight:500;
     padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    border: 1px solid #159eec;
-    background-color: #bfd2f8;
-    color: #1f2b6c;
-    font-size: 16px;
-}
-
-.login-box input::placeholder {
-    color: #1f2b6c;
-}
-
-.login-btn {
-    width: 100%;
-    padding: 12px;
+    font-size: 14px;
+  }
+  
+  .login-container .login-btn {
+    width: 40%;
+    padding: 14px;
+    background-color: #1f2b6c;
+    color: white;
     border: none;
-    border-radius: 5px;
-    background: #1f2b6c;
-    color: #fcfefe;
-    font-size: 18px;
+    border-radius: 30px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #165dd8;
+  }
+  
+  .create-account {
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #42b72a;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .create-account:hover {
+    background-color: #36a420;
+  }
+  
+  .forgot-password {
+    display: block;
     margin-top: 10px;
-}
-
-.login-btn:hover {
-    background: #159eec;
-}
+    color: #1877f2;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  

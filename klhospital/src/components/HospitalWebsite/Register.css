@@ -1,94 +1,70 @@
 .register-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    background-color: #273376; /* Primary Dark Blue */
-    padding: 211px;
-    padding-top: 202px;
-    /* margin-left: 277px;
-    margin-right: 270px; */
-    margin-top: 0px;
-  }
-  
-  .register-container .register-box {
-    background: #fcfefe;
-    padding: 30px;
-    margin-top: 0px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 550px; /* Slightly wider for better spacing */
-    text-align: center;
-  }
-  
-  .register-container h2 {
-    background-color: #1f2b6c;
-    color: #fcfefe;
-    padding: 12px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .register-container .form-group {
-    margin-bottom: 15px;
-    text-align: left;
-    width: 100%;
-  }
-  
-  .register-container label {
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
-    color: #1f2b6c;
-    margin-bottom: 5px;
-  }
-  
-  .register-container input,
-  .register-container select,
-  .register-container textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #159eec; /* Light Blue Border */
-    background-color: #bfd2f8; /* Sky Blue */
-    color: #1f2b6c;
-    font-size: 16px;
-  }
-  
-  .register-container textarea {
-    height: 60px;
-    resize: none;
-  }
-  
-  .register-container input::placeholder {
-    color: #1f2b6c;
-  }
-  
-  .register-container .row {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-  }
-  
-  .register-container .row .form-group {
-    width: 48%;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
 
-  .register-container .register-btn,
-  .register-container .register-btn-2 {
-    width: 100%;
-    padding: 12px;
+.register-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  text-align: center;
+}
+
+.register-container h2 {
+  margin-bottom: 20px;
+  color: white;
+  background-color: #1f2b6c;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 50px;
+}
+
+.register-btn {
+    width: 40%;
+    padding: 14px;
+    background-color: #1f2b6c;
+    color: white;
     border: none;
-    border-radius: 5px;
-    background: #1f2b6c; /* Dark Blue Button */
-    color: #fcfefe;
-    font-size: 18px;
+    border-radius: 30px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s ease;
-    margin-top: 15px;
-  }
-  
-  .register-container .register-btn:hover,
-  .register-container .register-btn-2:hover {
-    background: #159eec; /* Light Blue on Hover */
-  }
+}
+
+.register-btn:hover {
+  background-color: #165dd8;
+}
